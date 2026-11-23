@@ -1,0 +1,18 @@
+{
+  "categories": [
+    { "slug": "skincare", "name": "Skincare", "tile": 0 },
+    { "slug": "maquiagem", "name": "Maquiagem", "tile": 4 },
+    { "slug": "cabelos", "name": "Cabelos", "tile": 2 },
+    { "slug": "corpo-e-banho", "name": "Corpo e Banho", "tile": 3 },
+    { "slug": "perfumes", "name": "Perfumes", "tile": 1 },
+    { "slug": "acessorios", "name": "Acessórios", "tile": 5 }
+  ],
+  "products": [
+    { "id": 1, "name": "Sérum Facial", "detail": "Hidratação intensa · 30 ml", "category": "Skincare", "price": 129.9, "tile": 0, "tag": "QUERIDINHO" },
+    { "id": 2, "name": "Perfume Floral", "detail": "Essência delicada · 50 ml", "category": "Perfumes", "price": 189.9, "tile": 1, "tag": "NOVIDADE" },
+    { "id": 3, "name": "Máscara Capilar", "detail": "Ritual de nutrição · 250 g", "category": "Cabelos", "price": 89.9, "old": 119.9, "tile": 2 },
+    { "id": 4, "name": "Loção Corporal", "detail": "Toque de lavanda · 200 ml", "category": "Corpo e Banho", "price": 59.9, "old": 79.9, "tile": 3 },
+    { "id": 5, "name": "Paleta Essencial", "detail": "Tons rosados e neutros", "category": "Maquiagem", "price": 89.9, "old": 109.9, "tile": 4 },
+    { "id": 6, "name": "Kit de Pincéis", "detail": "Acabamento delicado · 3 peças", "category": "Acessórios", "price": 69.9, "old": 89.9, "tile": 5 }
+  ]
+}
