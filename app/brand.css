@@ -1,0 +1,286 @@
+:root {
+  --bg: #fbf6fb;
+  --lilac: #efd6e9;
+  --line: #e9dce9;
+  --muted: #75627d;
+}
+
+header {
+  background: #eed5eb;
+}
+
+.header-main {
+  min-height: 112px;
+  gap: 28px;
+}
+
+.header-main nav {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  gap: 24px;
+}
+
+.header-main nav a,
+.header-main nav button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (min-width: 641px) {
+  .header-actions .search {
+    width: 220px;
+    height: 38px;
+    padding-inline: 12px;
+  }
+}
+
+.brand-logo {
+  display: block;
+  width: 160px;
+  height: 106px;
+  overflow: hidden;
+}
+
+.brand-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 51%;
+  mix-blend-mode: normal;
+}
+
+header .brand-logo {
+  position: relative;
+  height: 70px;
+}
+
+header .brand-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-40%);
+}
+
+.topbar {
+  font-size: 12px;
+}
+
+.hero-copy {
+  max-width: 610px;
+  width: 52%;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 5.2vw, 72px);
+  line-height: 1.04;
+}
+
+.hero-copy > p {
+  font-size: 16px;
+  max-width: 370px;
+  line-height: 1.7;
+}
+
+.hero .eyebrow {
+  font-size: 12px;
+}
+
+.hero-note {
+  font-size: 13px;
+}
+
+.launch {
+  min-height: 430px;
+}
+
+.launch-copy {
+  margin-left: 55%;
+  padding-top: 45px;
+}
+
+.launch h2 {
+  font-size: 45px;
+}
+
+.launch p,
+.care-banner p,
+.newsletter p,
+.brand-section p {
+  font-size: 16px;
+}
+
+.section-heading p {
+  font-size: 16px;
+}
+
+.primary,
+.text-link,
+.buy,
+.filter,
+.category,
+.product-title {
+  font-size: 14px;
+}
+
+.primary > .lucide-arrow-right,
+.text-link > .lucide-arrow-right,
+.category-arrow {
+  display: none;
+}
+
+.primary {
+  padding: 13px 25px;
+}
+
+.launch .primary {
+  font-size: 13px;
+}
+
+.product-copy > p,
+.demo-pill,
+.tag,
+.tag.discount {
+  font-size: 12px;
+}
+
+.brand-values {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  align-items: center;
+  gap: 66px;
+  margin-bottom: 64px;
+  padding: 44px 60px;
+  border: 1px solid #ead8e9;
+  border-radius: 12px;
+  background: #f5e9f3;
+}
+
+.brand-monogram {
+  width: min(100%, 260px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin-inline: auto;
+}
+
+.brand-monogram img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.brand-values h2 {
+  margin-top: 13px;
+  font-size: 38px;
+}
+
+.brand-values p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.brand-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-keywords li {
+  border: 1px solid #dcc4de;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 13px;
+  background: #fff7;
+}
+
+.care-banner {
+  min-height: 330px;
+}
+
+.footer-main .brand-logo {
+  width: 210px;
+  height: 150px;
+  background: var(--purple);
+}
+
+.footer-main .brand-logo img {
+  filter: url(#wix-footer-ink);
+  mix-blend-mode: normal;
+}
+
+.footer-main p {
+  font-size: 14px;
+}
+
+.footer-demo {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+@media (max-width: 1150px) {
+  .header-main nav { gap: 14px; }
+  .header-main { gap: 20px; }
+  .brand-logo { width: 140px; height: 100px; }
+  .hero h1 { font-size: 60px; }
+}
+
+@media (max-width: 950px) {
+  .header-main { min-height: 104px; }
+  .brand-values { gap: 30px; padding: 35px; }
+  .brand-values h2 { font-size: 32px; }
+  .hero h1 { font-size: 52px; }
+  .launch-copy { margin-left: 50%; }
+}
+
+@media (max-width: 640px) {
+  .header-main { min-height: 120px; padding: 0 0 42px; }
+  .brand-logo { width: 140px; height: 102px; }
+  .hero-copy { width: 100%; max-width: 350px; }
+  .hero h1 { font-size: clamp(38px, 10.8vw, 48px); letter-spacing: -1.3px; }
+  .hero-copy > p { font-size: 16px; max-width: 305px; line-height: 1.6; }
+  .hero .eyebrow { font-size: 12px; letter-spacing: 1.7px; }
+  .hero, .hero-inner { min-height: 720px; }
+  .hero-background { height: 51%; }
+  .hero:after { background: linear-gradient(180deg, #eee0f3 0%, #eee0f3 42%, #eee0f3c9 53%, transparent 72%); }
+  .hero .primary { font-size: 14px; padding: 12px 24px; }
+  .section-heading p { font-size: 14px; }
+  .section-heading > .text-link { font-size: 12px; }
+  .launch { min-height: 390px; }
+  .launch h2 { font-size: 32px; }
+  .launch p { font-size: 14px; line-height: 1.6; }
+  .launch .primary { font-size: 12px; padding: 12px 14px; }
+  .launch-copy { margin-left: 43%; padding: 30px 15px 30px 0; }
+  .care-banner { min-height: 325px; }
+  .care-banner h2 { max-width: 270px; font-size: 30px; }
+  .care-banner p { font-size: 16px; max-width: 240px; }
+  .care-banner .text-link { font-size: 13px; }
+  .category, .filter, .buy, .product-title { font-size: 14px; }
+  .product-copy > p { font-size: 12px; min-height: 36px; }
+  .product-category { font-size: 12px; letter-spacing: 0.5px; }
+  .prices strong { font-size: 16px; }
+  .prices del { font-size: 12px; }
+  .tag, .tag.discount { font-size: 10px; }
+  .buy { text-align: left; }
+  .buy svg { flex-shrink: 0; }
+  .brand-values { grid-template-columns: 1fr; padding: 30px 23px; gap: 24px; margin-bottom: 35px; }
+  .brand-monogram { max-width: 155px; }
+  .brand-values h2 { font-size: 31px; }
+  .brand-values p { font-size: 16px; }
+  .brand-keywords li { font-size: 13px; }
+  .newsletter h2 { max-width: none; }
+  .newsletter p, .brand-section p { font-size: 14px; }
+  .footer-main p { font-size: 14px; }
+}
