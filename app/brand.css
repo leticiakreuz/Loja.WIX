@@ -17,7 +17,7 @@ header {
 .header-main nav {
   font-family: var(--serif);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.2px;
   gap: 24px;
 }
